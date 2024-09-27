@@ -10,7 +10,7 @@ services:
     volumes:
       - pg-data:/var/lib/postgresql/data
       - ./db:/docker-entrypoint-initdb.d
-      -
+
   web:
     image: chkion1234/nodejs-app
     build: web
