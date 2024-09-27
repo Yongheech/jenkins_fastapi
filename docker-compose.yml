@@ -12,14 +12,14 @@ services:
       - ./db:/docker-entrypoint-initdb.d
 
   web:
-    image: chkion1234/nodejs-app
+    image: siestageek/nodejs-app
     build: web
     ports:
-      - 3000:30000
+      - 3000:3000
     environment:
-        - DB_HOST=db
+      - DB_HOST=db
     depends_on:
-        - db
+      - db
 
 volumes:
   pg-data:
