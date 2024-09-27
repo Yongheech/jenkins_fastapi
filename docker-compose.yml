@@ -12,7 +12,7 @@ services:
       - ./db:/docker-entrypoint-initdb.d
 
   web:
-    image: siestageek/nodejs-app
+    image: chkion1234/nodejs-app
     build: web
     ports:
       - 3000:3000
